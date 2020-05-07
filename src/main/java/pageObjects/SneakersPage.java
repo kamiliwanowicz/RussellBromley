@@ -14,7 +14,6 @@ public class SneakersPage {
 	By firstItem = By.xpath("//div[@class='product-image']");
 	By allItems = By.xpath("//div[contains(@class, 'items-wrapper')]/div");
 	//By allItems = By.cssSelector(".product-image");
-	
 	By closeCookies = By.cssSelector(".btn-close");
 	
 	

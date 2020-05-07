@@ -1,4 +1,4 @@
-package SeleniumAcademy;
+package mainTests;
 
 import java.io.IOException;
 import java.util.concurrent.ThreadLocalRandom;
@@ -29,10 +29,11 @@ public class addItemToBasketTest extends base{
 	@Test
 	public void basePageNavigation() throws IOException, InterruptedException {
 		
+		//initialise driver
 		driver = initializeDriver(); 
 		driver.get(prop.getProperty("url"));
 		
-		
+		//initialise Page Objects
 		LandingPage l = new LandingPage(driver);
 		SneakersPage sp = new SneakersPage(driver);
 		ProductPage pp = new ProductPage(driver);
@@ -46,14 +47,8 @@ public class addItemToBasketTest extends base{
 		//close cookies
 		sp.getCloseCookies().click();
 		
-	
-		
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".product-image")));
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class, 'items-wrapper')]/div")));
-		
 		//wait for page to load
 		Thread.sleep(2000);
-		
 		
 		
 		//select random item

@@ -1,4 +1,4 @@
-package SeleniumAcademy;
+package mainTests;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -25,10 +25,11 @@ public class loginTest extends base{
 	@Test
 	public void basePageNavigation() throws IOException, InterruptedException {
 		
+		//initialise driver
 		driver = initializeDriver(); 
 		driver.get(prop.getProperty("url"));
 		
-		
+		//initialise Page Objects
 		LandingPage l = new LandingPage(driver);
 		LoginPage lp = new LoginPage(driver);
 		

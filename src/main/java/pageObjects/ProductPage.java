@@ -12,19 +12,12 @@ public class ProductPage {
 	public WebDriver driver;
 	
 	By selectSize = By.cssSelector(".occ-chevron");
-	
 	By uk3 = By.xpath("//a[contains(text(), 'EU 36')]");
-	
 	By addToBag = By.cssSelector("#addToCartButton");
-	
 	By cart = By.cssSelector("a[href='/cart']");
-	
 	By productName = By.cssSelector("#CC-prodDetails-displayName");
-	
 	By selectedSize = By.cssSelector(".occ-selected-value");
-	
 	By dropdown = By.cssSelector(".dropdown");
-	
 	By price = By.cssSelector(".product-price");
 	
 	
