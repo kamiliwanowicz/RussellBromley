@@ -43,13 +43,23 @@ public class addItemToBasketTest extends base{
 		l.getWomen().click();
 		l.getSneakers().click();
 		
+		//close cookies
+		sp.getCloseCookies().click();
+		
+	
+		
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".product-image")));
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class, 'items-wrapper')]/div")));
+		
 		//wait for page to load
-		WebDriverWait wait = new WebDriverWait(driver, 5);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ci-i-title")));
+		Thread.sleep(2000);
+		
+		
 		
 		//select random item
 		int size1 = sp.getAllItems().size();
 		int randomItem = ThreadLocalRandom.current().nextInt(0, size1);
+				
 		sp.getAllItems().get(randomItem).click();
 		
 				
@@ -88,6 +98,7 @@ public class addItemToBasketTest extends base{
 		//System.out.println(cp.getPriceAdded().getText());
 		
 		//wait for cart to load
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ci-i-title")));
 		
 		//validate if correct item added

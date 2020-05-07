@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
-  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="SeleniumAcademy.AppTest">
+      <class name="SeleniumAcademy.addItemToBasketTest">
         <methods>
-          <include name="oldTest"/>
+          <include name="basePageNavigation"/>
         </methods>
-      </class> <!-- SeleniumAcademy.AppTest -->
+      </class> <!-- SeleniumAcademy.addItemToBasketTest -->
     </classes>
-  </test> <!-- Surefire test(failed) -->
-</suite> <!-- Failed suite [Surefire suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

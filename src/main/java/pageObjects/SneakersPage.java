@@ -12,7 +12,10 @@ public class SneakersPage {
 	public WebDriver driver;
 	
 	By firstItem = By.xpath("//div[@class='product-image']");
-	By allItems = By.cssSelector(".product-image");
+	By allItems = By.xpath("//div[contains(@class, 'items-wrapper')]/div");
+	//By allItems = By.cssSelector(".product-image");
+	
+	By closeCookies = By.cssSelector(".btn-close");
 	
 	
 	
@@ -32,6 +35,11 @@ public WebElement getItem1() {
 public List<WebElement> getAllItems() {
 	
 	return driver.findElements(allItems); 
+}
+
+public WebElement getCloseCookies() {
+	
+	return driver.findElement(closeCookies); 
 }
 	
 	

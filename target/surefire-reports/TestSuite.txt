@@ -1,16 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.135 s <<< FAILURE! - in TestSuite
-SeleniumAcademy.AppTest.oldTest  Time elapsed: 16.891 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.959 s <<< FAILURE! - in TestSuite
+SeleniumAcademy.addItemToBasketTest.basePageNavigation  Time elapsed: 12.617 s  <<< FAILURE!
 org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="oc3-product-variants">...</div> is not clickable at point (982, 317). Other element would receive the click: <img data-bind="attr: {src: childSKUs &amp;&amp; childSKUs.length > 0 &amp;&amp; childSKUs[0].primaryThumbImageURL ?
-                                                                        childSKUs[0].primaryThumbImageURL : primaryThumbImageURL, alt: $parent.displayName}" alt="PARK UP" src="/ccstore/v1/images/?source=/file/v5572238391200008798/products/105063_medium.jpg&amp;height=100&amp;width=100">
-  (Session info: chrome=81.0.4044.129)
+element click intercepted: Element <div class="product-image">...</div> is not clickable at point (729, 863). Other element would receive the click: <p>...</p>
+  (Session info: chrome=81.0.4044.138)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Kamils-Mac-mini', ip: '2a02:c7f:363d:3200:dc9e:edcf:c608:d556%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_241'
+System info: host: 'Kamils-Mac-mini', ip: '2a02:c7f:363d:3200:49b5:1348:a3a:a4de%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '13.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: /var/folders/mq/r6jgtywj4m1...}, goog:chromeOptions: {debuggerAddress: localhost:51550}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b3bd42f243efb5531f7febe420bd65d6
-	at SeleniumAcademy.AppTest.oldTest(AppTest.java:83)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: /var/folders/mq/r6jgtywj4m1...}, goog:chromeOptions: {debuggerAddress: localhost:55783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9b5104122facd6ac0e512fdf68ff3fbf
+	at SeleniumAcademy.addItemToBasketTest.basePageNavigation(addItemToBasketTest.java:53)
 
